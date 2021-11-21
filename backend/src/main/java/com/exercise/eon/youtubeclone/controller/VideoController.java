@@ -15,9 +15,5 @@ public class VideoController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public void uploadVideo(@RequestParam("file") MultipartFile file){
-        videoService.uploadVideo(file);
-
-    }
-
+    public void uploadVideo(@RequestParam("file") MultipartFile file){ videoService.uploadVideo(file); }
 }

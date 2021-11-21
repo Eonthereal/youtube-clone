@@ -17,12 +17,12 @@ import java.util.UUID;
 @RequiredArgsConstructor
 public class S3Service implements FileService{
 
-    public static final String BUCKET_NAME = "eonbucket";
+//    public static final String BUCKET_NAME = "eonbucket";
+    public static final String BUCKET_NAME = "youtubeclone-bucket";
     private final AmazonS3Client awsS3Client;
 
     @Override
     public String uploadFile(MultipartFile file){
-
         var filenameExtension = StringUtils.getFilenameExtension(file.getOriginalFilename());
 
         var key = UUID.randomUUID().toString() + filenameExtension;
