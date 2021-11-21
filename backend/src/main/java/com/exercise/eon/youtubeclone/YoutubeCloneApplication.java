@@ -7,7 +7,7 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan(basePackages = {"com.exercise"})
+//@ComponentScan(basePackages = {"com.exercise"})
 public class YoutubeCloneApplication {
 
 	public static void main(String[] args) {
